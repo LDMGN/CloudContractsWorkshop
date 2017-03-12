@@ -18,5 +18,9 @@ public class NumberServiceClient {
                 PrimeNumbersResponse.class);
     }
 
-    //TODO 3.6
+    public FibonacciNumbersResponse calculateFibonacciNumbers(FibonacciNumbersRequest fibonacciNumbersRequest) {
+        return restTemplate.postForObject("http://numbers-service/fibonaccinumbers",
+                fibonacciNumbersRequest,
+                FibonacciNumbersResponse.class);
+    }
 }
