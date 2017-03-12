@@ -28,6 +28,18 @@
         </dependency>
     </dependencies>
 
-    <!-- TODO 1.2 - Add the spring-cloud-contract-maven-plugin to the build plugins -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-contract-maven-plugin</artifactId>
+                <version>1.0.3.RELEASE</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <baseClassForTests>nl.johannisk.cloud.contract.BaseTest</baseClassForTests>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
