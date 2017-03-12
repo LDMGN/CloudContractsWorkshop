@@ -41,5 +41,19 @@ public class NumberServiceClientTest {
         assertTrue(response.getPrimeNumbers().equals(primes));
     }
 
-    // TODO 3.3
+    @Test
+    public void getFibonacciNumbersUntill10() {
+        FibonacciNumbersResponse response = client.calculateFibonacciNumbers(new FibonacciNumbersRequest(10));
+
+        List<Integer> fibonacci = new ArrayList<>();
+        fibonacci.add(0);
+        fibonacci.add(1);
+        fibonacci.add(1);
+        fibonacci.add(2);
+        fibonacci.add(3);
+        fibonacci.add(5);
+        fibonacci.add(8);
+
+        assertTrue(response.getFibonacciNumbers().equals(fibonacci));
+    }
 }
