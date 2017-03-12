@@ -39,6 +39,15 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- TODO 2.1 - Add the spring-cloud-contract-maven-plugin to the build plugins -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-contract-wiremock</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-contract-stub-runner</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>
