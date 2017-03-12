@@ -13,5 +13,6 @@ numbers-service:
   ribbon:
     ServerListRefreshInterval: 1000
 
-
-#TODO 2.2
+stubrunner:
+  ids: nl.johannisk:numbers-service:+:stubs:0
+  work-offline: true
