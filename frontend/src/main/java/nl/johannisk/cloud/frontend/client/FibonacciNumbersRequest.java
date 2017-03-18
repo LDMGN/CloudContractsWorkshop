@@ -1,15 +1,19 @@
 package nl.johannisk.cloud.frontend.client;
 
 public class FibonacciNumbersRequest {
+    private final Integer from;
+    private final Integer to;
 
-    //TODO 5.2
-    private final Integer untill;
-
-    public FibonacciNumbersRequest(Integer untill) {
-        this.untill = untill;
+    public FibonacciNumbersRequest(Integer from, Integer to) {
+        this.from = from;
+        this.to = to;
     }
 
-    public Integer getUntil() {
-        return untill;
+    public Integer getFrom() {
+        return from;
+    }
+
+    public Integer getTo() {
+        return to;
     }
 }
