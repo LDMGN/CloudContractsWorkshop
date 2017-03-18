@@ -42,11 +42,11 @@ public class NumberServiceClientTest {
     }
 
     @Test
-    public void getFibonacciNumbersUntill10() {
-        FibonacciNumbersResponse response = client.calculateFibonacciNumbers(new FibonacciNumbersRequest(10));
+    public void getFibonacciNumbersFrom1till10() {
+
+        FibonacciNumbersResponse response = client.calculateFibonacciNumbers(new FibonacciNumbersRequest(1,10));
 
         List<Integer> fibonacci = new ArrayList<>();
-        fibonacci.add(0);
         fibonacci.add(1);
         fibonacci.add(1);
         fibonacci.add(2);
